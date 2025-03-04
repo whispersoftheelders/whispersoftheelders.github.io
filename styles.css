@@ -70,3 +70,22 @@ body {
 .text-content p {
     margin-top: 0; /* Remove extra top margin */
 }
+
+
+@media (max-width: 768px) {
+    .first-box {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align for better look */
+        text-align: center; /* Aligns text for better readability */
+        gap: 15px; /* More spacing for readability */
+    }
+
+    .text-content {
+        align-items: center; /* Keeps text aligned in the center */
+    }
+
+    .first-box img {
+        width: 80px; /* Adjust image size for smaller screens */
+        height: auto;
+    }
+}
