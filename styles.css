@@ -55,6 +55,9 @@ body {
     margin: 300px;
     padding-top: 100px;
     gap: 30px;
+    max-width: 100%; /* Ensure the container doesn't exceed the viewport */
+    box-sizing: border-box; /* Prevents overflow due to padding/margins */
+    overflow-x: hidden;
 }
 
 
