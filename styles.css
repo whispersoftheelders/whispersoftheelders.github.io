@@ -99,6 +99,10 @@ h4 {
     margin-top: -30px;
 }
 
+.third-box {
+    padding-bottom: 300px;
+}
+
 .p4 {
     display: flex;
     align-items: center;
@@ -107,7 +111,11 @@ h4 {
     text-align: center;
 }
 
-.third-box {
+.where-box {
     margin-bottom: 300px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
