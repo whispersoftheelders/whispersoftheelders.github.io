@@ -124,7 +124,7 @@ h4 {
 
 .the-thinker {
     width: 100px;
-    margin-left: 650px;
+    margin-left: 625px;
 }
 
 .section1 {
@@ -138,4 +138,13 @@ h1 span, p span {
     background-color: #EDEADE;
     border-radius: 30px;
     padding: 10px;
+}
+
+.figcaption {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-size: small;
+    margin-top: -5px;
 }
