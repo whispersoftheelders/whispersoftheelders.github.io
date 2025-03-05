@@ -14,11 +14,10 @@ header {
     padding-top: 30px;
 }
 
-header img{
+header img {
     animation: fadeIn 5s;
-}
-
-.wote-logo {
+    max-width: 100%;
+    height: auto;
     width: 800px;
 }
 
@@ -41,6 +40,8 @@ header img{
     font-size: 48px;
     color: #ECEBDE;
     animation: fadeIn 5s;
+    background: rgba(0,0,0, 0.75);
+    border-radius: 50px 70px;
 }
 
 h1 {
@@ -91,11 +92,14 @@ p {
 /* Beliefs Section */
 .first-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
+    justify-content: center; /* Center the content horizontally */
     gap: 20px;
     padding: 50px 20px;
+    width: 100%; /* Ensure the box spans the full width */
+    max-width: 1200px; /* Limit the width to prevent the layout from stretching too much */
+    margin: 0 auto; /* Center the entire box */
 }
 
 .ouroboros {
@@ -105,25 +109,25 @@ p {
 
 /* Fix Bullet Point Alignment */
 ul {
-    list-style: round; /* Remove default bullets */
-    padding: 0; /* Remove default padding */
-    text-align: left; /* Ensure text aligns properly */
-    max-width: 500px; /* Limit width for a cleaner look */
-    margin: auto; /* Center the list */
+    list-style: round;
+    padding: 0;
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
 }
 
 ul li {
     display: flex;
-    align-items: center; /* Align bullet and text properly */
-    gap: 8px; /* Adjust space between bullet and text */
+    align-items: center;
+    gap: 8px;
     font-size: 18px;
     margin: 5px 0;
 }
 
 ul li::before {
-    content: "•"; /* Custom bullet */
-    font-size: 20px; /* Adjust bullet size */
-    color: black; /* Bullet color */
+    content: "•";
+    font-size: 20px;
+    color: black;
 }
 
 /* Third Section */
@@ -141,27 +145,44 @@ ul li::before {
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header img {
+        max-width: 90%;
+    }
+
+    /* Landing Section adjustments */
+    .landing h1 {
+        font-size: 36px;
+        margin-top: 0;
+    }
+
+    .landing p {
+        font-size: 18px;
+    }
+
+    /* Keep layout side by side on mobile */
     .first-box {
         flex-direction: row;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
     .text-content {
-        max-width: 500px;
+        max-width: 100%;
         text-align: left;
     }
+
+    /* Background effect for h1 */
+    .landing h1, .landing p {
+        background: rgba(0,0,0, 0.75);
+        border-radius: 50px 70px;
+    }
+
+    /* Adjust image size for mobile */
+    .ouroboros {
+        width: 120px;
+        margin-top: 0;
+    }
 }
-
-/* Additional Styling */
-
-.landing h1, .landing p {
-   background: rgba(0,0,0, 0.75);
-   border-radius: 50px 70px;
-}
-
-.intro {
-    margin-bottom: 100px;
-}
-
