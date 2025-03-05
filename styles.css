@@ -10,6 +10,7 @@ body {
 header {
     text-align: center;
     padding: 20px 0;
+    background-color: white;
 }
 
 .wote-logo {
@@ -18,12 +19,13 @@ header {
 
 /* Landing Section - Full Screen */
 .landing-section {
-    background-image: url(images/hermetic-bw.png);
+    background-image: url(images/hermetic-color.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 220vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -34,6 +36,10 @@ header {
     font-size: 48px;
     color: black;
     animation: fadeIn 3s;
+}
+
+h1 {
+    margin-top: -160px;
 }
 
 .landing p {
@@ -47,10 +53,6 @@ header {
 h1, h2, h3, h4, h5 {
     font-size: 36px;
     text-align: center;
-}
-
-h1 {
-    margin-top: -170px;
 }
 
 p {
@@ -70,7 +72,7 @@ p {
     width: 150px;
     display: block;
     margin: 20px auto;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
 }
 
 .figcaption {
@@ -78,6 +80,7 @@ p {
     color: gray;
     font-size: small;
     margin-top: 2px;
+    padding-bottom: 20px;
 }
 
 /* Beliefs Section */
@@ -94,15 +97,27 @@ p {
     width: 150px;
 }
 
+/* Fix Bullet Point Alignment */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: round; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    text-align: left; /* Ensure text aligns properly */
+    max-width: 500px; /* Limit width for a cleaner look */
+    margin: auto; /* Center the list */
 }
 
 ul li {
-    text-align: center;
+    display: flex;
+    align-items: center; /* Align bullet and text properly */
+    gap: 8px; /* Adjust space between bullet and text */
     font-size: 18px;
     margin: 5px 0;
+}
+
+ul li::before {
+    content: "•"; /* Custom bullet */
+    font-size: 20px; /* Adjust bullet size */
+    color: black; /* Bullet color */
 }
 
 /* Third Section */
@@ -133,8 +148,9 @@ ul li {
     }
 }
 
-h1 span {
-    background-color: white;
+/* Additional Styling */
+h1 span, p span {
+    background-color:#ECEBDE;
     border-radius: 5%;
 }
 
