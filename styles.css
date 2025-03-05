@@ -126,6 +126,9 @@ h4 {
 .the-thinker {
     width: 100px;
     margin-left: 625px;
+    align-items: center;
+    display: block;
+    justify-content: center;
 }
 
 .section1 {
