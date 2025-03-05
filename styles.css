@@ -151,7 +151,8 @@ ul li::before {
 /* Additional Styling */
 h1 span, p span {
     background-color:#ECEBDE;
-    border-radius: 5%;
+    width: 50px;
+    height: 50px;
 }
 
 .intro {
