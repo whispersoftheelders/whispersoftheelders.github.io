@@ -51,6 +51,7 @@ body {
     margin-top: -16px;
     animation: fadeIn 8s;
     color: black;
+    padding-top: -50px;
 }
 
 .p2 {
@@ -100,18 +101,19 @@ h4 {
     align-items: center;
     justify-content: center;
     margin-top: -30px;
+    margin-bottom: -170px;
 }
 
 .third-box {
-    padding-bottom: 300px;
+    padding-bottom: 100px;
 }
 
 .p4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
     text-align: center;
+    margin: 200px;
 }
 
 .where-box {
@@ -129,12 +131,13 @@ h4 {
     align-items: center;
     display: block;
     justify-content: center;
+    margin-top: -30px;
 }
 
 .section1 {
     padding-bottom: 1500px;
     background-image: url(images/hermetic-bw.png);
-    background-size: 1420px ;
+    background-size: cover;
     background-repeat: no-repeat
 }
 
@@ -151,4 +154,8 @@ h1 span, p span {
     color: gray;
     font-size: small;
     margin-top: -5px;
+}
+
+.explain {
+    padding-top: 20px;
 }
